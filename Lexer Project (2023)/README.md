@@ -1,20 +1,3 @@
-# Assignment 2 Documentation
-
-Author: Collins Gichohi
-
-## Overview of code skeleton
-
-The folders `.devcontainer`, `.vscode`, and `lib` contain configuration information that must not be deleted or modified. The remaining folders will be discussed in class.
-
-## Scope of Work
-
-| Requirement                                                       | Completed? | Comments from student |
-| ----------------------------------------------------------------- | ---------- | --------------------- |
-| 1. File path via CLI                                              | [✔️]         |                       |
-| 2. tokens.txt file updated and files regenerated; `Lexer` updated | [✔️]         |                       |
-| 3. `Token` class updated                                          | [✔️]         |                       |
-| 4. `Lexer` token output updated                                   | [✔️]         |                       |
-| 5. `Lexer` source file output added                               | [✔️]         |                       |
 
 ## Class diagrams
 
