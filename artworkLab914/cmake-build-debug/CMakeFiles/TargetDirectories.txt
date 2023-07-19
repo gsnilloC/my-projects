@@ -1,0 +1,3 @@
+/Users/sirbo/CPP/artworkLab914/cmake-build-debug/CMakeFiles/artworkLab914.dir
+/Users/sirbo/CPP/artworkLab914/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sirbo/CPP/artworkLab914/cmake-build-debug/CMakeFiles/rebuild_cache.dir
