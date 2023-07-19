@@ -1,0 +1,46 @@
+<section class="navbar">
+  <div id="content">
+    <a href="/">
+      <img src="https://static.vecteezy.com/system/resources/previews/013/923/543/original/blue-car-logo-png.png"
+        class="ribbon" width="65" height="65" />
+      <h3 class="title">RoadStream</h3>
+    </a>
+  </div>
+  <nav>
+    <ul class="navlinks">
+      {{#if isIndexPage}}
+      {{else}}
+        <li class="searchBar">
+          <form action="/posts/search" method="GET" enctype="application/x-www-form-urlencoded">
+            <input 
+              id="search-text"
+              type="text" 
+              class="search-text"
+              name="searchValue" 
+              placeholder="Search..."
+            />
+          </form>
+        </li>
+      {{/if}}
+      <a href="/postvideo"> Post </a>
+      {{#if isLoggedIn}}
+        <div class="dropdown"> 
+          <link> Hi, {{user.username}}</link>
+          <div class="dropdown-content">
+            {{#if isNotProfilePage}}
+            <a href="/users/profile/{{user.userId}}" class="profile-link"> Profile </a>
+            <a>
+              {{/if}}
+              <form action='/users/logout' method="POST">
+                <input class='logout-button' type='submit' value='Logout'> </input>
+              </form>
+            </a>
+          </div>
+        </div>
+      {{else}}
+        <li><a href="/register"> Register </a></li>
+        <li><a href="/login"> Login </a></li>
+      {{/if}}
+    </ul>
+  </nav>
+</section>

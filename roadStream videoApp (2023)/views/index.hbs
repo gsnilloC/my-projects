@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Video App</title>
+  </head>
+  <body>
+    <center>
+      <div class="logo">
+        <a href="/">
+          <img alt="Google" src="https://static.vecteezy.com/system/resources/previews/013/923/543/original/blue-car-logo-png.png" style="width: 200px; height: auto;">
+        </a>
+      </div>
+      <div class="searchbar">
+        <form action="/posts/search" method="GET">
+          <input 
+            id="search-text"
+            type="text" 
+            class="search-text"
+            name="searchValue" 
+            placeholder="Search..."
+          />
+          <button type="submit">Submit</button>
+          <button type="submit">Get Recent Posts</button>
+        </form>
+      </div>
+    </center>
+    <main id="indexContent">
+      <div id="photo-album">
+        {{#each posts}}
+        <div class="post">
+          <a href="/posts/viewpost/{{this.id}}">
+            <img src="/{{this.thumbnail}}" alt="{{this.title}}">
+            <h2>{{this.title}}</h2>
+          </a>
+          <p>{{this.haystack}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </main>
+  </body>
+</html>

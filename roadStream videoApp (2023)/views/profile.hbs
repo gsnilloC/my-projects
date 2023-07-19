@@ -1,0 +1,23 @@
+<main id="maincontent">
+  <body class="profilePage">
+    <section class="profileSection">
+      <img src="https://www.pngkey.com/png/full/202-2024691_my-profile-comments-my-profile-icon-png.png" width="200" height="200" />
+      <br />
+      <h2>{{user.username}}</h2>
+      <p><b>{{user.email}}</b></p>
+    </section>
+    <section class="postsSection">
+      <h1>Posts</h1>
+      {{#each posts}}
+      <section class="commentSection">
+        <a href="/posts/viewpost/{{this.id}}">
+          <img src="/{{this.thumbnail}}" alt="{{this.title}}">
+          <h4 class="headerText">{{this.title}}</h4>
+        </a>
+        <span class="comment-date">{{formatDateString this.createdAt}}</span>
+        <a href="/posts/delete/{{this.id}}" class="button">Delete</a> 
+      </section>
+      {{/each}}
+    </section>
+  </body>
+</main>
