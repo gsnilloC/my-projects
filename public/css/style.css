@@ -1,0 +1,198 @@
+body {
+  padding: 130px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.homePage section {
+  margin-bottom: 50px;
+}
+
+.loginPage {
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 60px; 
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding: 10px;
+  margin: 15px;
+  margin-top: auto;
+  position: fixed;
+  left: 85%; 
+
+}
+.container {
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 300px;
+  padding: 50px;
+  background: gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerTitle {
+  text-align: center; 
+  font-size: 25px; 
+  margin-top: 5px; 
+}
+
+
+
+button {
+  background-color: lightblue;
+  align-items: center;
+  font-size: medium;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+button {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.loginHeader {
+  text-align: center;
+  color: lightblue;
+}
+
+.description a {
+  color: black;
+}
+
+.ribbon {
+  position: absolute;
+  left: 8px;
+  top: 0;
+}
+
+.postHeader{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.errorMSG{
+  color: red;
+  text-align: center;
+}
+
+#photo-album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.searchbar{
+  height:45px;
+  border:none;
+  width:500px;
+  font-size:16px;
+  outline: none;
+  
+}
+
+.buttons{
+  margin-top:30px;
+}
+
+#photo-album {
+  margin-top: 150px;
+}
+
+.post {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px 10px; 
+  text-align: center;
+  overflow: hidden;
+}
+
+.postTitle {
+  font-size: 25px;
+}
+
+.post img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.post h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.post p {
+  margin: 0;
+}
+
+.logo {
+  margin-top: -80px;
+}
+
+.searchbar {
+  margin-top: 30px;
+}
+
+.search-text {
+  margin-top: 8px;
+}
+
+.submit-button {
+  margin-top: 8px;
+}
+
+.postcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src = "path/to/jsfile.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "icon" href = 
+"https://static.vecteezy.com/system/resources/previews/013/923/543/original/blue-car-logo-png.png" 
+        type = "image/x-icon">
+</head>
+
+<body class = "loginPage" >
+    <h2 class = "loginHeader">
+        Login
+    </h2><br>
+   
+    <form id="login" onsubmit="return validateForm()" method="POST">
+        <div class="container">
+            <br><h2 class = "pageHeader">
+            </h2><br>
+            <label for="userName">  Username </label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="passWord"> Password </label>
+            <input type="password" id="password" name="password" required />
+
+            <a href="register.html"> Create an Account </a> <br>
+        </div>
+            <button type="button" class="loginbtn">Login</button>
+    </form>
+</body>
+
+</html>
