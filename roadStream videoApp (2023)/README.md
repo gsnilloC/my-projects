@@ -1,4 +1,3 @@
-# Build/Run Instructions
 ## Build Instructions
 1. Within the applications folder run the command ```npm run builddb``` to build the tables in your database and view them in your preferred workbench.
 
