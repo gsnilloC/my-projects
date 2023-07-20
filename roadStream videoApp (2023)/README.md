@@ -1,3 +1,4 @@
+##Functionality
 https://github.com/gsnilloC/my-projects/assets/83888230/7883badb-8092-4eb9-b51d-e4db1e82aded
 
 ## Build Instructions
