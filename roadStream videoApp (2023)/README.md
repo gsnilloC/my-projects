@@ -1,5 +1,5 @@
 ## Functionality
-Welcome to our platform, where users can create accounts and seamlessly share their videos with the world. Once registered, users can easily post videos from their accounts. Additionally, our platform fosters a sense of community, as users can engage with each other by leaving comments on posts.
+Welcome to video sharing platform, where users can create accounts and seamlessly share their videos with the world. Once registered, users can easily post videos from their accounts. Additionally, our platform fosters a sense of community, as users can engage with each other by leaving comments on posts.
 
 To ensure the utmost security and privacy, all user passwords are encrypted, guaranteeing a safe online experience. When users log in, we create secure sessions to maintain their access securely throughout their visit.
 
