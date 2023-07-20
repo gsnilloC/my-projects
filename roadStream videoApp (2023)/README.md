@@ -4,7 +4,7 @@
 2. For database credentials, create a ```.env``` file within the application holder that will hold the credentials needed to access your database.
 ```
 DB_HOST="localhost"
-DB_NAME="csc317db"
+DB_NAME="roadStreamDB"
 DB_USER="root"
 DB_PASSWORD="password"
 PORT="3000" 
