@@ -1,3 +1,5 @@
+https://github.com/gsnilloC/my-projects/assets/83888230/7883badb-8092-4eb9-b51d-e4db1e82aded
+
 ## Build Instructions
 1. Within the applications folder run the command ```npm run builddb``` to build the tables in your database and view them in your preferred workbench.
 
