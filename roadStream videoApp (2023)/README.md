@@ -1,15 +1,3 @@
-# CSC 317 Course Project
-
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Collins Gichohi    |
-| Student ID    | 922440815      |
-| Student Email | cgichohi@sfsu.edu   |
-
-
-
 # Build/Run Instructions
 ## Build Instructions
 1. Within the applications folder run the command ```npm run builddb``` to build the tables in your database and view them in your preferred workbench.
