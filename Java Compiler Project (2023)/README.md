@@ -1,33 +1,21 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/VZQ8t-Ug)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10929227&assignment_repo_type=AssignmentRepo)
-# Assignment 4 Documentation
+## Functionality
+The compiler comprises several classes that work together seamlessly to process and analyze the source code. The "Lexer" class is responsible for breaking down the source file into individual tokens by analyzing characters based on specific patterns. It efficiently handles whitespace and comments while reporting any illegal characters encountered during the lexing process. The result is a list of tokens, each with its position and type, facilitating further processing by the parser and other compiler components.
 
-Author: Collins Gichohi
+The "Parser" class takes the tokenized input from the lexer and performs recursive-descent parsing, adhering to a predefined grammar. It constructs the Abstract Syntax Tree (AST) representation of the source program, ensuring the correct syntax is followed based on the recognized tokens.
 
-## Overview of code skeleton
+Next, the "Constrainer" class plays a crucial role in ensuring that expressions, variables, and function calls in the program adhere to the language's typing rules. It performs type checking to guarantee that the program's types are correctly matched and compatible, which is essential for generating bytecode during code generation.
 
-The folders `.devcontainer`, `.vscode`, and `lib` contain configuration information that must not be deleted or modified. The remaining folders will be discussed in class.
+These classes use a visitor design pattern to perform different operations on the AST nodes without altering the node classes directly. Specifically, the "DrawOffsetVisitor" is responsible for drawing the AST with offsets, enhancing the visual representation of the AST. Meanwhile, the "OffsetVisitor" calculates the offsets of the AST nodes, facilitating efficient memory management during compilation. Both visitors implement the ASTVisitor interface, which defines methods for visiting different types of AST nodes.
 
-## Scope of Work
+Overall, this cohesive system of classes effectively processes, analyzes, and ensures the correctness of the source code, leading to the successful compilation of the program.
 
-| Requirement                                             | Completed? | Comments from student |
-| ------------------------------------------------------- | ---------- | --------------------- |
-| 1. New constrainer error added (`SelectorTypeMismatch`) | [✔️]         |                       |
-| 2. New types constrained                                | [✔️]         |                       |
-| 3. New statements constrained                           | [✔️]         |                     |
-| 4. All debug statements removed; output correct         | [✔️]         |                       |
-| 5. Manually tested from the command line                | []         |testInvalidSelect is failing, however in the debug console the output is correct and a SelectorTypeMismatch is properly thrown. Also not passing the second testValidSelect test, I think it could be an issue with the decoration of expressions with their intrinsic type trees.                     |
+## Data Strucutres Used
+In the OffsetVisitor class, an efficient data structure called HashMap<AST, Integer> is utilized to store the offset values for each AST node. This HashMap allows easy association of AST nodes with their corresponding offset values, providing a quick lookup mechanism for the compiler during compilation.
 
-## Results and Conclusions
+To manage sets of specific tokens effectively, the Parser class employs EnumSet<Tokens> instances named relationalOps, addingOps, and multiplyingOps. These EnumSets act as compact and optimized containers for token sets, allowing for efficient membership checks and set operations.
 
-### What I Learned
+The DrawOffsetVisitor class leverages arrays to organize and track various aspects of the AST drawing process. The int[] nCount array stores the count of nodes at each depth level, aiding in the accurate layout of the AST. The int[] currOffset array keeps track of the current offset value for each depth level, assisting the OffsetVisitor in calculating offsets for the AST nodes. Additionally, the int[] progress array helps the drawing process by tracking the traversal progress at each depth level.
 
-This project gave me more exposure to the debugger. I now understand how to utilize breakpoints to pinpoint problems within the code instead of aimlessly stepping through each function trying to figure out where the problem is located. Now, I can confidently say that the debugger is something that I am now fully comfortable with. Not only is it extremely valuable when coding but it is also a great tool to learn what is happening when you execute each function and gives a greater understandning of the inner workings of your code. 
+For graphical rendering, the DrawOffsetVisitor class utilizes the BufferedImage data structure. This allows the compiler to create a graphical canvas on which the AST nodes are drawn, resulting in a clear visual representation of the AST.
 
-### Challenges I Encountered
-
-I understood how to implement knew statements into the constrainer, such as unless and if without else. However, for the select statements the logic was much more complicated. I found myself understanding what I needed to do but, not being able to find a way to do it.
-
-Something I could not figure out was why for invalid test cases, they would all have the gray circle and would not run. However, in the debug console the output is correct. The tests were also not compiling at all in the terminal. 
-
-<img width="143" alt="Screenshot 2023-04-23 at 8 03 44 PM" src="https://user-images.githubusercontent.com/83888230/233891099-d0ae4afe-ddcc-40a1-bc4d-d881ea54b06e.png">
+Finally, in the Constrainer class, a Stack<SymTab> named symTabStack serves as a powerful tool for managing the symbol table during the semantic analysis phase. This stack efficiently handles scoping rules and symbol table nesting, ensuring the correct matching of types and proper adherence to language rules, crucial for generating bytecode during code generation.
