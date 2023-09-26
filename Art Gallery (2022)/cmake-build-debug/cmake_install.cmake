@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sirbo/CPP/codingLab5
+# Install script for directory: /Users/sirbo/Documents/GitHub/my-projects/Art Gallery (2022)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sirbo/CPP/codingLab5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sirbo/Documents/GitHub/my-projects/Art Gallery (2022)/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

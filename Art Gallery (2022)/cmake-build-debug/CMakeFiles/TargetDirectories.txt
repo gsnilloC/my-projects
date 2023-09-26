@@ -1,3 +1,3 @@
-/Users/sirbo/CPP/codingLab5/cmake-build-debug/CMakeFiles/codingLab5.dir
-/Users/sirbo/CPP/codingLab5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/sirbo/CPP/codingLab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sirbo/Documents/GitHub/my-projects/Art Gallery (2022)/cmake-build-debug/CMakeFiles/codingLab5.dir
+/Users/sirbo/Documents/GitHub/my-projects/Art Gallery (2022)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sirbo/Documents/GitHub/my-projects/Art Gallery (2022)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
